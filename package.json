@@ -1,0 +1,24 @@
+{
+  "name": "dbms_core_banking_application",
+  "version": "1.0.0",
+  "description": "This is a website designed as a project for 5th sem DBMS course. The website mimics the main functionalities of a bank.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "nodemon server",
+    "client:dev": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\" "
+  },
+  "author": "Surya M N",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.14",
+    "pg": "^8.7.1"
+  }
+}
